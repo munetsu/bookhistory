@@ -1,0 +1,181 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+}
+
+body {
+    width: 100%;
+}
+
+/******************************************* 
+* 全体
+********************************************/
+.field {
+    display: flex;
+}
+
+.sidebar {
+    width: 15vw;
+    padding: 5vh 1.5vw;
+}
+
+.main {
+    width: 85vw;
+    padding: 5vh 10vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menulist {
+    height: 5vh;
+    padding-top: 2vh;
+}
+
+input {
+    width: 40vw;
+    height: 5vh;
+    margin: 2.5vh 0;
+    font-size: 1.3rem;
+}
+
+.clicked {
+    background-color: #00FFA6;
+}
+
+/******************************************* 
+* ジャンル登録
+********************************************/
+.btn, .back {
+    width: 40vw;
+    margin: 10vh 0;
+    background-color: #00D9FF;
+}
+
+.comment {
+    width: 40vw;
+    margin: 2.5vh 0;
+    height: 10vh;
+    font-size: 1rem;
+}
+
+.tabletitle {
+    vertical-align: middle;
+}
+
+/******************************************* 
+* 読書履歴
+********************************************/
+.book {
+    margin-right: 3vw;
+    margin-top: 5vh;
+}
+
+.bookimg {
+    width: 400px;
+    height: 265px;
+}
+
+.text {
+    margin: 1.5vh 0;
+}
+
+.btnflex {
+    display: flex;
+}
+
+.flexarea {
+    width: 40%;
+    margin: 5vh 5%;
+    text-align: center;
+}
+
+.flexbtn {
+    padding: 3vh 40%;
+    color: white;
+}
+
+.detailbtn {
+    background-color: #00D9FF;
+}
+
+.deletebtn {
+    background-color: #FF2600;
+}
+
+/******************************************* 
+* 書籍詳細
+********************************************/
+.bookcomment {
+    white-space: pre;
+}
+
+/******************************************* 
+* スマホ用レイアウト
+********************************************/
+@media screen and (max-width:480px){
+
+    .field {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100vw;
+        padding: 5vh 5vw;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    .menulist {
+        width: 30vw;
+        height: 5vh;
+    }
+
+    .clicked {
+        padding: 1vh 0;
+    }
+
+    .main {
+        width: 100vw;
+        padding: 0vh 5vw;
+        display: block;
+    }
+
+    input {
+        width: 60vw;
+        border: solid 1px gray;
+    }
+
+    .btn, .back {
+        width: 90vw;
+        margin: 10vh 0vw;
+        background-color: #00D9FF;
+    }
+
+    .inputCategory {
+        padding: 0 auto;
+    }
+
+    .comment {
+        width: 60vw;
+        margin: 2.5vh 0;
+        height: 10vh;
+        font-size: 1rem;
+        border: solid 1px gray;
+    }
+
+    .flexbtn {
+        padding: 3vh 10vw;
+    }
+
+    .bookimg {
+        width: 90vw;
+    }
+}
